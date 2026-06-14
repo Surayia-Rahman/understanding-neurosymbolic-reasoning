@@ -32,7 +32,7 @@ The objective is to evaluate how **semantic similarity and symbolic structure in
 
 ---
 
-# 📁 REPOSITORY STRUCTURE (EXPLAINED)
+# 📁 REPOSITORY STRUCTURE 
 
 ## Core Logic
 
