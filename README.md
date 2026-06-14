@@ -1,51 +1,49 @@
-# Neuro-Symbolic Reasoning: Graph, Neural, and Hybrid Systems Analysis
+# 🧠 Neuro-Symbolic Reasoning: Graphs, Embeddings & Hybrid AI Systems
 
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![Status](https://img.shields.io/badge/status-research--prototype-orange)
-![Domain](https://img.shields.io/badge/domain-neuro--symbolic--AI-purple)
+![Scope](https://img.shields.io/badge/scope-neuro--symbolic--AI-purple)
 
 ---
 
-## 📌 Overview
+## 📌 Project Overview
 
-This repository presents a structured empirical investigation into **neuro-symbolic reasoning systems**, focusing on how symbolic graph reasoning, neural embeddings, and hybrid fusion models behave under structural and semantic constraints.
+This project investigates **neuro-symbolic reasoning systems** across three paradigms:
 
-The system is designed to evaluate:
+1. Symbolic reasoning via taxonomy graphs  
+2. Robustness under structural noise  
+3. Neural embeddings + hybrid fusion models  
 
-- Symbolic reasoning via taxonomy graphs  
-- Robustness under structural perturbation  
-- Neural semantic generalization  
-- Hybrid neuro-symbolic integration  
+The objective is to evaluate how **semantic similarity and symbolic structure interact under controlled perturbations and retrieval tasks**.
 
 ---
 
 ## 🧠 Core Research Question
 
-> How do symbolic structure and neural semantic similarity interact when reasoning over hierarchical knowledge under noise and distribution shift?
+> Can neural embeddings and symbolic graph reasoning be combined without losing structural correctness or semantic generalization?
 
 ---
 
-## 🧱 System Architecture
+# 🧱 SYSTEM ARCHITECTURE
 
 ```mermaid
 flowchart TD
 
-A[Raw Data] --> B[Symbolic Taxonomy Graph Builder]
+A[Raw Data] --> B[Symbolic Taxonomy Graph]
 A --> C[Neural Query Dataset]
 
-B --> D[Phase 01: Graph Reasoning Engine]
-D --> E[Path Inference + Explainability]
+B --> D[Phase 01: Graph Reasoning]
+D --> E[Path Inference]
 D --> F[Graph Metrics + Vulnerability Analysis]
 
-E --> G[Phase 02: Noise Injection System]
+E --> G[Phase 02: Noise Injection]
+G --> H[Noisy Graph Builder]
+H --> I[Multi-Seed Robustness Tests]
+I --> J[Collapse / Stable / Degraded Regimes]
 
-G --> H[Noisy Graph Generator]
-H --> I[Multi-Seed Robustness Experiments]
-I --> J[Degradation + Regime Detection]
-
-C --> K[Phase 03: Embedding Models]
+C --> K[Phase 03: Embeddings]
 K --> L[TF-IDF Baseline]
-K --> M[Sentence Transformer Embeddings]
+K --> M[Sentence Transformer Model]
 
 L --> N[Hybrid Fusion Layer]
 M --> N
@@ -54,195 +52,230 @@ N --> O[Hybrid Retrieval System]
 
 O --> P[Evaluation Layer]
 P --> Q[Failure Taxonomy]
-P --> R[Performance Metrics]
+P --> R[Final Metrics]
 P --> S[Visualization Outputs]
-
-Q --> T[Final Findings + Reports]
-R --> T
-S --> T
 ```
+
+<img width="1536" height="1024" alt="0e8eb087-1330-4332-bc71-5535e2252a26" src="https://github.com/user-attachments/assets/752317c7-25ef-41c9-93a0-805dfd4222c0" />
+
 
 ---
 
-## 📊 Experimental Phases
+# 📁 REPOSITORY STRUCTURE (EXPLAINED)
 
-### Phase 01 — Symbolic Graph Reasoning
+## Core Logic
 
-| Component | Description |
-|----------|-------------|
-| Input | Taxonomy graph (is-a hierarchy) |
-| Method | Path-based inference |
-| Output | Multi-hop reasoning chains |
-| Metrics | Path correctness, hop depth, node vulnerability |
+| Folder | Purpose |
+|--------|--------|
+| `symbolic/` | Graph construction + path reasoning engine |
+| `analysis/` | All experimental pipelines (Phase 01 & 02) |
+| `phase_03/embeddings/` | Neural embedding models |
+| `phase_03/experiments/` | Hybrid + evaluation experiments |
+
+---
+
+## Data Layer
+
+| Folder | Purpose |
+|--------|--------|
+| `data/raw/` | Original taxonomy + query datasets |
+| `data/processed/` | Cleaned experimental datasets |
+| `data/generated/` | (Optional) synthetic or derived datasets |
+
+---
+
+## Results 
+
+All outputs are stored in:
+
+```
+results/
+```
+
+### Phase-wise outputs:
+
+| Phase | Outputs |
+|------|--------|
+| Phase 01 | graph metrics, centrality, vulnerability |
+| Phase 02 | robustness experiments, noise analysis |
+| Phase 03 | embeddings, hybrid retrieval, similarity scores |
+
+---
+
+## 📊 KEY VISUAL RESULTS
+
+### Phase 01 — Graph Structure
+
+- Node vulnerability analysis
+- Centrality distributions
+- Multi-hop reasoning paths
+
+📌 Example outputs:
+- `graph_visualization_v1.png`
+- `node_vulnerability_v1.png`
 
 ---
 
 ### Phase 02 — Robustness Under Noise
 
-| Component | Description |
-|----------|-------------|
-| Input | Clean symbolic graph |
-| Perturbation | Edge removal + corruption |
-| Evaluation | Multi-seed stability testing |
-| Output | Regime classification |
+- Multi-seed graph corruption tests
+- Success/failure degradation curves
+- Regime classification (stable / degraded / collapsed)
 
-#### Regimes Observed
-
-| Regime | Behavior |
-|--------|----------|
-| Stable | High success, consistent hops |
-| Degraded | Partial failure under noise |
-| Collapsed | Reasoning breaks entirely |
+📌 Key figures:
+- `success_rate_by_seed.png`
+- `hop_distribution.png`
 
 ---
 
-### Phase 03 — Neural + Hybrid Retrieval
+### Phase 03 — Embeddings & Hybrid Model
 
-| Model | Description | Strength | Weakness |
-|------|-------------|----------|----------|
-| TF-IDF | Lexical baseline | Fast | No semantics |
-| Sentence Transformers | Semantic embeddings | Generalization | Weak structure |
-| Hybrid Model | Graph + embeddings fusion | Balanced | Hub bias |
+- Semantic similarity distributions
+- TF-IDF vs embedding comparison
+- Hybrid retrieval scoring
 
----
-
-## 📈 Key Results
-
-### Retrieval Performance
-
-| Model | Accuracy | Avg Similarity |
-|------|----------|----------------|
-| TF-IDF | ~0.10 | 0.00 |
-| Embeddings | ~0.50 | ~0.60 |
-| Hybrid | ~0.40 | ~0.94 |
+📌 Key figures:
+- `similarity_distribution_v1.png`
 
 ---
 
-### Robustness Summary
+# 📊 EXPERIMENTAL RESULTS SUMMARY
+
+## Model Performance Comparison
+
+| Model | Accuracy | Avg Similarity | Key Strength | Key Weakness |
+|------|----------|----------------|--------------|---------------|
+| TF-IDF | 0.10 | 0.00 | Fast lexical match | No semantics |
+| Embeddings | 0.50 | 0.60 | Semantic generalization | Weak structure |
+| Hybrid | 0.40 | 0.94 | Balanced fusion | Hub bias |
+
+---
+
+## Robustness Summary (Phase 02)
 
 | Metric | Value |
 |------|------|
-| Avg Success Drop | ~5% |
-| Collapse Seeds | 2 / 10 |
-| Stable Seeds | 3 / 10 |
-| Degraded Seeds | 5 / 10 |
+| Stable seeds | 3 / 10 |
+| Degraded seeds | 5 / 10 |
+| Collapsed seeds | 2 / 10 |
+| Avg success drop | ~5% |
 
 ---
 
-## ⚠️ Key Findings
+# ⚠️ KEY FINDINGS
 
-### 1. Symbolic systems are structurally precise but fragile
-Small perturbations cause catastrophic reasoning failure.
-
-### 2. Neural models generalize but ignore structure
-Semantic similarity does not guarantee ontological correctness.
-
-### 3. Hybrid systems introduce new failure modes
-- hub bias (over-reliance on central nodes like “animal”)  
-- shortcut hallucinations  
-- inconsistent path alignment  
+## 1. Symbolic systems
+✔ Precise reasoning paths  
+❌ Extremely fragile under noise  
 
 ---
 
-## 🧪 Failure Taxonomy
+## 2. Neural embeddings
+✔ Strong semantic generalization  
+❌ Ignore hierarchical constraints  
+
+---
+
+## 3. Hybrid systems
+✔ Improved overall recall  
+❌ Introduce structural bias (“hub dominance”)  
+
+---
+
+## 🧠 Fundamental Insight
+
+> Semantic similarity and symbolic correctness are not naturally aligned and require explicit structural constraints or learned alignment mechanisms.
+
+---
+
+# 🧠 FAILURE TAXONOMY
 
 | Type | Description |
 |------|-------------|
 | Lexical failure | TF-IDF mismatch |
 | Semantic drift | embedding confusion |
-| Structural collapse | graph disconnection |
-| Hub over-reliance | hybrid shortcut bias |
+| Structural collapse | broken graph path |
+| Hub bias | hybrid over-reliance on central nodes |
 
 ---
 
-## 📁 Repository Structure
+# 🚀 HOW TO RUN
 
-```
-analysis/        → experimental logic (Phase 01–02)
-symbolic/        → graph reasoning engine
-phase_03/        → embeddings + hybrid models
-data/            → raw + processed datasets
-results/         → all outputs (CSV, plots)
-findings/        → research interpretation
-tests/           → validation scripts
-docs/            → design documentation
-```
-
----
-
-## 🚀 How to Run
-
-### Install dependencies
+## Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-### Phase 01
+## Phase 01
 ```bash
 python -m analysis.phase_01_graph_analysis
 ```
 
 ---
 
-### Phase 02
+## Phase 02
 ```bash
 python -m analysis.phase_02_robustness_report_v1
 ```
 
 ---
 
-### Phase 03 (Semantic)
+## Phase 03 (Semantic)
 ```bash
 python -m phase_03.embeddings.semantic_embedding_generator_v1
 ```
 
 ---
 
-### Phase 03 (Hybrid)
+## Phase 03 (Hybrid)
 ```bash
 python -m phase_03.experiments.phase_03_hybrid_retrieval_v1
 ```
 
 ---
 
-## Outputs
+# 📌 OUTPUTS DIRECTORY
 
-All generated artifacts are stored in:
+All generated artifacts:
 
 ```
 results/
 ```
 
 Includes:
-
-- retrieval CSVs
-- robustness experiments
-- failure breakdowns
-- plots and visualizations
-
----
-
-## Future Work
-
-- Learned alignment between graph + embedding spaces  
-- Adaptive hybrid weighting mechanisms  
-- Ontology-aware embedding models  
-- Neural-symbolic reasoning with constraints  
-- Graph-aware transformer architectures  
+- CSV metrics
+- robustness logs
+- similarity scores
+- plots and figures
 
 ---
 
-## Interpretation
+# TESTS
 
-This project demonstrates a core limitation in current AI systems:
+Minimal validation suite:
 
-> Semantic similarity and symbolic correctness are fundamentally misaligned unless explicitly constrained.
+```
+tests/
+```
+
+Ensures:
+- graph integrity
+- query consistency
 
 ---
 
-## 👤 Author Note
+# FUTURE WORK
 
-This is a research prototype exploring neuro-symbolic reasoning under structural perturbation and semantic ambiguity.
+- Learnable graph–embedding alignment
+- Ontology-aware transformer models
+- Adaptive hybrid weighting
+- Constraint-based reasoning architectures
+
+---
+
+# 👤 AUTHOR NOTE
+
+This is a research prototype exploring neuro-symbolic reasoning under structural perturbation, semantic drift, and hybrid fusion collapse modes.
 
