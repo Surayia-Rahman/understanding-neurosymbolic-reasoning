@@ -22,7 +22,7 @@ In professional words,
 
 ---
 
-# 🧱 SYSTEM ARCHITECTURE
+## 🧱 System architecture
 
 
 <img width="1536" height="1024" alt="0e8eb087-1330-4332-bc71-5535e2252a26" src="https://github.com/user-attachments/assets/752317c7-25ef-41c9-93a0-805dfd4222c0" />
@@ -30,7 +30,7 @@ In professional words,
 
 ---
 
-# 📁 REPOSITORY STRUCTURE 
+## 📁 Repository 
 
 ## Core Logic
 
@@ -108,9 +108,9 @@ results/
 
 ---
 
-# 📊 EXPERIMENTAL RESULTS SUMMARY
+## 📊 Experiment results
 
-## Model Performance Comparison
+### Model Performance Comparison
 
 | Model | Accuracy | Avg Similarity | Key Strength | Key Weakness |
 |------|----------|----------------|--------------|---------------|
@@ -120,7 +120,7 @@ results/
 
 ---
 
-## Robustness Summary (Phase 02)
+### Robustness Summary (Phase 02)
 
 | Metric | Value |
 |------|------|
@@ -131,21 +131,21 @@ results/
 
 ---
 
-# ⚠️ KEY FINDINGS
+## ⚠️ Key findings
 
-## 1. Symbolic systems
+### 1. Symbolic systems
 ✔ Precise reasoning paths  
 ❌ Extremely fragile under noise  
 
 ---
 
-## 2. Neural embeddings
+### 2. Neural embeddings
 ✔ Strong semantic generalization  
 ❌ Ignore hierarchical constraints  
 
 ---
 
-## 3. Hybrid systems
+### 3. Hybrid systems
 ✔ Improved overall recall  
 ❌ Introduce structural bias (“hub dominance”)  
 
@@ -157,7 +157,7 @@ results/
 
 ---
 
-# 🧠 FAILURE TAXONOMY
+## 🧠 Failure reasoning
 
 | Type | Description |
 |------|-------------|
@@ -168,46 +168,46 @@ results/
 
 ---
 
-# 🚀 HOW TO RUN
+## 🚀 To run,
 
-## Install dependencies
+### Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## Phase 01
+### Phase 01
 ```bash
 python -m analysis.phase_01_graph_analysis
 ```
 
 ---
 
-## Phase 02
+### Phase 02
 ```bash
 python -m analysis.phase_02_robustness_report_v1
 ```
 
 ---
 
-## Phase 03 (Semantic)
+### Phase 03 (Semantic)
 ```bash
 python -m phase_03.embeddings.semantic_embedding_generator_v1
 ```
 
 ---
 
-## Phase 03 (Hybrid)
+### Phase 03 (Hybrid)
 ```bash
 python -m phase_03.experiments.phase_03_hybrid_retrieval_v1
 ```
 
 ---
 
-# 📌 OUTPUTS DIRECTORY
+## 📌 Outputs
 
-All generated artifacts:
+All generated collectibles
 
 ```
 results/
@@ -221,7 +221,7 @@ Includes:
 
 ---
 
-# TESTS
+## Tests
 
 Minimal validation suite:
 
@@ -235,7 +235,7 @@ Ensures:
 
 ---
 
-# FUTURE WORK
+## Future work
 
 - Learnable graph–embedding alignment
 - Ontology-aware transformer models
