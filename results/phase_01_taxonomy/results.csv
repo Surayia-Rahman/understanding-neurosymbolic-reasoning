@@ -1,0 +1,9 @@
+timestamp,source,target,answer,reasoning_path,hops,experiment_id
+2026-06-13T19:01:26.530442,cat,living_thing,yes,cat -> mammal -> animal -> living_thing,3,phase_01_batch_01
+2026-06-13T19:01:26.530442,rose,animal,no,,0,phase_01_batch_01
+2026-06-13T19:01:26.530442,sparrow,living_thing,yes,sparrow -> bird -> animal -> living_thing,3,phase_01_batch_01
+2026-06-13T19:01:26.530442,shark,animal,yes,shark -> fish -> animal,2,phase_01_batch_01
+2026-06-13T19:01:26.530442,dog,animal,yes,dog -> mammal -> animal,2,phase_01_batch_01
+2026-06-13T19:01:26.530442,tulip,plant,yes,tulip -> flower -> plant,2,phase_01_batch_01
+2026-06-13T19:01:26.530442,snake,living_thing,yes,snake -> reptile -> animal -> living_thing,3,phase_01_batch_01
+2026-06-13T19:01:26.530442,eagle,plant,no,,0,phase_01_batch_01

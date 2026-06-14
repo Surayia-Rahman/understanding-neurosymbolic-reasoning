@@ -1,0 +1,11 @@
+query,expected,predicted,similarity,correct,failure_type
+kitten,cat,whale,0.0,False,lexical_mismatch_failure
+puppy,dog,whale,0.0,False,lexical_mismatch_failure
+orca,whale,whale,0.0,True,correct
+canary,sparrow,whale,0.0,False,lexical_mismatch_failure
+hawk,eagle,whale,0.0,False,lexical_mismatch_failure
+goldfish,salmon,whale,0.0,False,lexical_mismatch_failure
+guppy,fish,whale,0.0,False,lexical_mismatch_failure
+crocodile,reptile,whale,0.0,False,lexical_mismatch_failure
+daisy,flower,whale,0.0,False,lexical_mismatch_failure
+oak,plant,whale,0.0,False,lexical_mismatch_failure

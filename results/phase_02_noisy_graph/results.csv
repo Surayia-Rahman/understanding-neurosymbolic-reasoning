@@ -1,0 +1,9 @@
+source,target,answer,reasoning_path,hops
+cat,living_thing,yes,cat -> living_thing,1
+rose,animal,no,,0
+sparrow,living_thing,yes,sparrow -> bird -> animal -> living_thing,3
+shark,animal,yes,shark -> fish -> animal,2
+dog,animal,no,,0
+tulip,plant,yes,tulip -> flower -> plant,2
+snake,living_thing,yes,snake -> reptile -> animal -> living_thing,3
+eagle,plant,no,,0

@@ -1,0 +1,11 @@
+query,expected,predicted,similarity,correct
+kitten,cat,whale,0.0,False
+puppy,dog,whale,0.0,False
+orca,whale,whale,0.0,True
+canary,sparrow,whale,0.0,False
+hawk,eagle,whale,0.0,False
+goldfish,salmon,whale,0.0,False
+guppy,fish,whale,0.0,False
+crocodile,reptile,whale,0.0,False
+daisy,flower,whale,0.0,False
+oak,plant,whale,0.0,False

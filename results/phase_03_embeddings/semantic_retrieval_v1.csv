@@ -1,0 +1,11 @@
+query,expected,predicted,similarity,correct
+kitten,cat,cat,0.7882107496261597,True
+puppy,dog,dog,0.8040066957473755,True
+orca,whale,whale,0.34860092401504517,True
+canary,sparrow,bird,0.5637414455413818,False
+hawk,eagle,bird,0.5738717317581177,False
+goldfish,salmon,fish,0.7194260358810425,False
+guppy,fish,fish,0.5621132254600525,True
+crocodile,reptile,lizard,0.6136546730995178,False
+daisy,flower,flower,0.6043735146522522,True
+oak,plant,eagle,0.48261427879333496,False

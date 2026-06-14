@@ -1,0 +1,11 @@
+query,expected,predicted,score,correct
+kitten,cat,animal,1.0860144,False
+puppy,dog,animal,1.1847055,False
+orca,whale,whale,0.5986009,True
+canary,sparrow,bird,0.8970748,False
+hawk,eagle,bird,0.9072051,False
+goldfish,salmon,fish,1.0527594,False
+guppy,fish,animal,1.0010483,False
+crocodile,reptile,reptile,0.9174044,True
+daisy,flower,flower,0.9377068,True
+oak,plant,plant,0.8591455,True

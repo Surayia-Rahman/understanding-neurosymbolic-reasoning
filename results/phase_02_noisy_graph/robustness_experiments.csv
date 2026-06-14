@@ -1,0 +1,81 @@
+seed,source,target,answer,hops,reasoning_path
+1,cat,living_thing,no,0,
+1,rose,animal,no,0,
+1,sparrow,living_thing,yes,3,sparrow -> bird -> animal -> living_thing
+1,shark,animal,yes,2,shark -> fish -> animal
+1,dog,animal,yes,2,dog -> mammal -> animal
+1,tulip,plant,yes,2,tulip -> flower -> plant
+1,snake,living_thing,no,0,
+1,eagle,plant,no,0,
+2,cat,living_thing,yes,3,cat -> mammal -> animal -> living_thing
+2,rose,animal,no,0,
+2,sparrow,living_thing,yes,3,sparrow -> bird -> animal -> living_thing
+2,shark,animal,yes,2,shark -> fish -> animal
+2,dog,animal,no,0,
+2,tulip,plant,yes,2,tulip -> flower -> plant
+2,snake,living_thing,yes,3,snake -> reptile -> animal -> living_thing
+2,eagle,plant,no,0,
+3,cat,living_thing,yes,3,cat -> mammal -> animal -> living_thing
+3,rose,animal,no,0,
+3,sparrow,living_thing,no,0,
+3,shark,animal,yes,2,shark -> fish -> animal
+3,dog,animal,yes,2,dog -> mammal -> animal
+3,tulip,plant,yes,2,tulip -> flower -> plant
+3,snake,living_thing,yes,3,snake -> reptile -> animal -> living_thing
+3,eagle,plant,no,0,
+4,cat,living_thing,no,0,
+4,rose,animal,no,0,
+4,sparrow,living_thing,yes,1,sparrow -> living_thing
+4,shark,animal,yes,2,shark -> fish -> animal
+4,dog,animal,no,0,
+4,tulip,plant,yes,2,tulip -> flower -> plant
+4,snake,living_thing,no,0,
+4,eagle,plant,no,0,
+5,cat,living_thing,yes,3,cat -> mammal -> animal -> living_thing
+5,rose,animal,no,0,
+5,sparrow,living_thing,no,0,
+5,shark,animal,yes,2,shark -> fish -> animal
+5,dog,animal,yes,2,dog -> mammal -> animal
+5,tulip,plant,no,0,
+5,snake,living_thing,yes,3,snake -> reptile -> animal -> living_thing
+5,eagle,plant,no,0,
+6,cat,living_thing,no,0,
+6,rose,animal,no,0,
+6,sparrow,living_thing,no,0,
+6,shark,animal,yes,2,shark -> fish -> animal
+6,dog,animal,yes,2,dog -> mammal -> animal
+6,tulip,plant,yes,2,tulip -> flower -> plant
+6,snake,living_thing,no,0,
+6,eagle,plant,no,0,
+7,cat,living_thing,yes,3,cat -> mammal -> animal -> living_thing
+7,rose,animal,no,0,
+7,sparrow,living_thing,no,0,
+7,shark,animal,yes,2,shark -> fish -> animal
+7,dog,animal,yes,2,dog -> mammal -> animal
+7,tulip,plant,no,0,
+7,snake,living_thing,no,0,
+7,eagle,plant,no,0,
+8,cat,living_thing,no,0,
+8,rose,animal,no,0,
+8,sparrow,living_thing,no,0,
+8,shark,animal,yes,2,shark -> fish -> animal
+8,dog,animal,no,0,
+8,tulip,plant,yes,2,tulip -> flower -> plant
+8,snake,living_thing,no,0,
+8,eagle,plant,no,0,
+9,cat,living_thing,no,0,
+9,rose,animal,no,0,
+9,sparrow,living_thing,no,0,
+9,shark,animal,no,0,
+9,dog,animal,no,0,
+9,tulip,plant,no,0,
+9,snake,living_thing,no,0,
+9,eagle,plant,no,0,
+10,cat,living_thing,yes,3,cat -> mammal -> animal -> living_thing
+10,rose,animal,no,0,
+10,sparrow,living_thing,yes,3,sparrow -> bird -> animal -> living_thing
+10,shark,animal,yes,2,shark -> fish -> animal
+10,dog,animal,yes,2,dog -> mammal -> animal
+10,tulip,plant,yes,2,tulip -> flower -> plant
+10,snake,living_thing,yes,1,snake -> living_thing
+10,eagle,plant,no,0,
