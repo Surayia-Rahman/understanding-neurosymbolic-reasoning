@@ -16,9 +16,7 @@ This project investigates **neuro-symbolic reasoning systems** across three para
 
 The objective is to evaluate how **semantic similarity and symbolic structure interact under controlled perturbations and retrieval tasks**.
 
----
-
-## 🧠 Core Research Question
+In professional words,
 
 > Can neural embeddings and symbolic graph reasoning be combined without losing structural correctness or semantic generalization?
 
