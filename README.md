@@ -71,7 +71,7 @@ results/
 
 ---
 
-## 📊 KEY VISUAL RESULTS
+## 📊 Visuals
 
 ### Phase 01 — Graph Structure
 
@@ -151,13 +151,13 @@ results/
 
 ---
 
-## 🧠 Fundamental Insight
+## Fundamental Insight
 
 > Semantic similarity and symbolic correctness are not naturally aligned and require explicit structural constraints or learned alignment mechanisms.
 
 ---
 
-## 🧠 Failure reasoning
+## Failure reasoning
 
 | Type | Description |
 |------|-------------|
