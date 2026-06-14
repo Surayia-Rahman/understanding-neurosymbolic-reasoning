@@ -1,0 +1,11 @@
+query,expected_symbolic_node
+kitten,cat
+puppy,dog
+orca,whale
+canary,sparrow
+hawk,eagle
+goldfish,salmon
+guppy,fish
+crocodile,reptile
+daisy,flower
+oak,plant
