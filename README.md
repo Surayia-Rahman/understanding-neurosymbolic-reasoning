@@ -26,35 +26,6 @@ The objective is to evaluate how **semantic similarity and symbolic structure in
 
 # 🧱 SYSTEM ARCHITECTURE
 
-```mermaid
-flowchart TD
-
-A[Raw Data] --> B[Symbolic Taxonomy Graph]
-A --> C[Neural Query Dataset]
-
-B --> D[Phase 01: Graph Reasoning]
-D --> E[Path Inference]
-D --> F[Graph Metrics + Vulnerability Analysis]
-
-E --> G[Phase 02: Noise Injection]
-G --> H[Noisy Graph Builder]
-H --> I[Multi-Seed Robustness Tests]
-I --> J[Collapse / Stable / Degraded Regimes]
-
-C --> K[Phase 03: Embeddings]
-K --> L[TF-IDF Baseline]
-K --> M[Sentence Transformer Model]
-
-L --> N[Hybrid Fusion Layer]
-M --> N
-
-N --> O[Hybrid Retrieval System]
-
-O --> P[Evaluation Layer]
-P --> Q[Failure Taxonomy]
-P --> R[Final Metrics]
-P --> S[Visualization Outputs]
-```
 
 <img width="1536" height="1024" alt="0e8eb087-1330-4332-bc71-5535e2252a26" src="https://github.com/user-attachments/assets/752317c7-25ef-41c9-93a0-805dfd4222c0" />
 
